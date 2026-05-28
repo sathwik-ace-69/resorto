@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(134, 220, 233);
+    color: black;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+
+}
+.nav1{
+    display: flex;
+    margin-left: 20px;
+    font-size: 20px;
+    align-items: center;
+    font-weight:150;
+}
+.nav3{
+    color: black;
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+.nav4{
+    display: flex;
+    font-size: 15px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center; 
+}
+.signup{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 10px;
+}
+.nav2{
+    display: flex;
+    font-size: 15px;
+    gap: 20px;
+    justify-content: space-between;
+}
+.navlogo{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(134, 220, 233) ;
+    border-radius:50%;
+}
+
+p1{
+    font-family:cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav2 :hover{
+    color:rgb(25, 63, 189);
+    transition: 0.3s;
+    text-decoration: underline;
+    cursor:pointer
+}   
+
+.nav4 :hover{
+    color:white;
+    background-color: black;
+    
+    border-radius: 20px;
+}
+
+.nav3 :hover{
+    color:rgb(25, 63, 189);
+    transition: 0.3s;
+    text-decoration: underline;
+    cursor:pointer
+}   
+
+a:link {
+  color: rgb(0, 0, 0); 
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(0, 0, 0);  
+  text-decoration: none;
+}
+
+
+.background-image {
+  height: 85vh;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/648f064f78577f5829eeeff5/ccf0d70c-7038-4c0c-a238-23896ffd6e41/butler+service+at+sandals+%287%29.png"); 
+  background-size: cover;
+  overflow: hidden;
+background-position: center;
+}
+
+
+
+.service-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px;
+    background: #f5f5f5;
+}
+
+.highlight {
+    background: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.services-list {
+    padding: 60px;
+}
+
+.services-list h2 {
+    margin-bottom: 30px;
+}
+
+.service-box {
+    margin-bottom: 25px;
+}
+
+.why-us {
+    background: #f4f9fb;
+    padding: 50px;
+}
+
+.why-us ul li {
+    margin: 10px 0;
+}
+
+.footer {
+    background: #222;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.home{
+    text-decoration: none;
+    color: black;
+}
+.hamburger{
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
+@media (max-width:768px){
+
+    nav{
+        justify-content:space-between;
+        padding:0 20px;
+    }
+
+    .hamburger{
+        display:block;
+    }
+
+    .nav2{
+        display:none;
+        position:absolute;
+        top:50px;
+        left:0;
+        width:100%;
+        background-color:rgb(134,220,233);
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+        padding:15px 0;
+        z-index:100;
+    }
+
+    .nav2.show{
+        display:flex;
+    }
+
+    .nav3,
+    .nav4{
+        display:none;
+    }
+}
+

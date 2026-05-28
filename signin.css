@@ -1,0 +1,166 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, "Segoe UI", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f7fb;
+  color: #222;
+  padding: 16px;        
+  background-color: #e0f7fa;        
+}
+
+.signin-wrapper {
+  width: 100%;
+  max-width: 380px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  padding: 28px 24px 24px;
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.brand h1 {
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  color: #0a3d62;
+}
+
+.brand p {
+  font-size: 13px;
+  color: #777;
+  margin-top: 4px;
+}
+
+.signin-title {
+  font-size: 18px;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.signin-subtitle {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d5d9e2;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-field:focus {
+  border-color: #0a84ff;
+  box-shadow: 0 0 0 2px rgba(10, 132, 255, 0.2);
+}
+
+.field-group {
+  margin-bottom: 14px;
+}
+
+.helper-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;        
+}
+
+.helper-row a {
+  text-decoration: none;
+  color: #0a84ff;
+}
+
+.signin-btn {
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;       
+  background: #0a84ff;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.08s;
+}
+
+.signin-btn:hover {
+  background: #0066cc;
+}
+
+.signin-btn:active {
+  transform: scale(0.98);
+}
+
+.bottom-text {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+}
+
+.bottom-text a {
+  color: #0a84ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+  }
+
+  .signin-wrapper {
+    margin: 0;
+    padding: 24px 18px 20px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  }
+
+  .brand h1 {
+    font-size: 20px;
+  }
+
+  .signin-title {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .helper-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .signin-btn {
+    font-size: 14px;
+  }
+}

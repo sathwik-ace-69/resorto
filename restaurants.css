@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(134, 220, 233);
+    color: black;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+
+}
+.nav1{
+    display: flex;
+    margin-left: 20px;
+    font-size: 20px;
+    align-items: center;
+    font-weight:150;
+}
+.nav3{
+    color: black;
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+.nav4{
+    display: flex;
+    font-size: 15px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center; 
+}
+.signup{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 10px;
+}
+.nav2{
+    display: flex;
+    font-size: 15px;
+    gap: 20px;
+    justify-content: space-between;
+}
+.navlogo{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(134, 220, 233) ;
+    border-radius:50%;
+}
+
+p1{
+    font-family:cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav2 :hover{
+    color:rgb(25, 63, 189);
+    transition: 0.3s;
+    text-decoration: underline;
+    cursor:pointer
+}   
+
+.nav4 :hover{
+    color:black;
+    transition: 0.3s;
+    background-color: white;
+    gap:5px;
+    padding:10px;
+    border-radius: 20px;
+    cursor:pointer
+}
+
+.nav3 :hover{
+    color:rgb(25, 63, 189);
+    transition: 0.3s;
+    text-decoration: underline;
+    cursor:pointer
+}   
+
+a:link {
+  color: rgb(0, 0, 0); 
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(0, 0, 0);  
+  text-decoration: none;
+}
+
+
